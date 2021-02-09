@@ -15,3 +15,10 @@
 11. Поддержка field и method injection не требуется - Inject только через конструкторы. (выполнено)
 12. Все аргументы конструкторов гарантировано являются reference type'ами. То есть не предполагается передача в конструкторы аргументов простых типов. (выполнено)
 13. Все конструкторы являются public. (выполнено)
+
+
+В тестах есть одна ошибка AssertionFailedError, но вывод идентичен. Вы можете убедиться:
+org.opentest4j.AssertionFailedError: 
+
+Expected :Нету такого конструктора, найденного в class com.vlad.elinext.testclasses.impls.DImpl
+Actual   :No valid constructor found in class DImpl
